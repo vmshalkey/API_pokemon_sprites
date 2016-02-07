@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Original Pokemon</title>
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function(){
+
+                var pokemon_sprite = "";
+                for(var i = 1; i < 152; i++) 
+                {
+                    pokemon_sprite += "<img src ='http://pokeapi.co/media/img/" + i + ".png'>";
+                }
+                $('#pokemon').html(pokemon_sprite);
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="pokemon">
+        </div>
+    </body>
+</html>
